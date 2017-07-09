@@ -1,6 +1,6 @@
 /**
  * Globals plugin module.
- * @module webpack/plugins/globals
+ * @module webpack-plugins/globals
  */
 
 import webpack from 'webpack';

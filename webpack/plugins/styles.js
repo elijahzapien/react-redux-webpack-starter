@@ -1,6 +1,6 @@
 /**
  * Styles plugin module.
- * @module webpack/plugins/styles
+ * @module webpack-plugins/styles
  */
 
 import ExtractTextPlugin from 'extract-text-webpack-plugin';

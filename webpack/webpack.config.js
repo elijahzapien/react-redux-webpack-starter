@@ -1,6 +1,6 @@
 /**
  * webpackConfig module.
- * @module webpack/webpack.config
+ * @module webpack-config
  *
  * Rather than manage one giant configuration file, rules and plugins have
  * been broken out into their own files in ./rules and ./plugins.

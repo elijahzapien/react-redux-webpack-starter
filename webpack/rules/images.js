@@ -1,6 +1,6 @@
 /**
  * Images rule module.
- * @module webpack/rules/images
+ * @module webpack-rules/images
  */
 
 export default {

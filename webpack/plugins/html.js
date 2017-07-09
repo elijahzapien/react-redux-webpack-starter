@@ -1,6 +1,6 @@
 /**
  * Html plugin module.
- * @module webpack/plugins/html
+ * @module webpack-plugins/html
  */
 
 import HtmlWebpackPlugin from 'html-webpack-plugin';

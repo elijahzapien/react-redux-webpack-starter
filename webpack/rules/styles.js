@@ -1,6 +1,6 @@
 /**
  * Styles rule module.
- * @module webpack/rules/styles
+ * @module webpack-rules/styles
  */
 
 import projectConfig from 'project-config';

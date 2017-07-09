@@ -1,6 +1,6 @@
 /**
  * Webpack plugins module.
- * @module webpack/plugins
+ * @module webpack-plugins
  */
 
 export {default as globalsPlugin} from './globals';

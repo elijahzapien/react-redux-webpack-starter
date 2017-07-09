@@ -1,6 +1,6 @@
 /**
  * Favicons plugin module.
- * @module webpack/plugins/favicons
+ * @module webpack-plugins/favicons
  */
 
 import FaviconsWebpackPlugin from 'favicons-webpack-plugin';

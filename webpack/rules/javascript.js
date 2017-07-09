@@ -1,6 +1,6 @@
 /**
  * Javascript rule module.
- * @module webpack/rules/javascript
+ * @module webpack-rules/javascript
  */
 
 export default {

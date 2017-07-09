@@ -1,6 +1,6 @@
 /**
  * Webpack rules module.
- * @module webpack/rules
+ * @module webpack-rules
  */
 
 export {default as stylesRule} from './styles';
