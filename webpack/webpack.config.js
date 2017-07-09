@@ -77,26 +77,8 @@ if (__DEV__) {
 // --------------------
 if (__PROD__) {
   config.plugins.push(
-    new webpack.LoaderOptionsPlugin({
-      minimize: true,
-      debug: false,
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: !!config.devtool,
-      comments: false,
-      compress: {
-        warnings: false,
-        screw_ie8: true,
-        conditionals: true,
-        unused: true,
-        comparisons: true,
-        sequences: true,
-        dead_code: true,
-        evaluate: true,
-        if_return: true,
-        join_vars: true,
-      },
-    }),
+    plugins.loaderOptionsPlugin,
+    plugins.uglifyJavascriptPlugin,
     plugins.faviconsPlugin
   );
 }
