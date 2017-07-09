@@ -1,0 +1,60 @@
+//
+// Elements
+// ------------------------------
+
+
+// horizontal rules
+// ---------------
+
+hr {
+    margin: $baseLineHeight 0;
+    border: 0;
+    border-top: 1px solid $hrBorder;
+}
+
+
+// img
+// ---------------
+
+img {
+    max-width: 100%;
+    border-width: 0;
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic;
+}
+
+
+// figure
+// ---------------
+
+figure {
+    margin: 0;
+    img {}
+    figcaption {}
+}
+
+
+// form
+// ---------------
+
+form {
+    margin: 0 0 $baseLineHeight 0;
+
+    fieldset {
+        margin-bottom: $baseLineHeight;
+        padding: 0;
+        border-width: 0;
+    }
+
+    legend {}
+
+    p {
+        margin-bottom: $baseLineHeight / 2;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0 0 $baseLineHeight 0;
+        padding: 0;
+    }
+}

@@ -1,0 +1,36 @@
+{
+  "presets": [
+    "es2015",
+    "stage-2",
+    "react"
+  ],
+  "plugins": [
+    "transform-class-properties",
+    "transform-runtime",
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "project-config": "./config",
+
+          "webpack-config": "./webpack/webpack.config",
+          "webpack-rules": "./webpack/rules",
+          "webpack-plugins": "./webpack/plugins",
+
+          "utils": "./src/client/javascript/utils",
+          "enum-utils": "./src/client/javascript/utils/enum",
+
+          "enums": "./src/client/javascript/enums",
+
+          "actions": "./src/client/javascript/actions",
+          "reducers": "./src/client/javascript/reducers",
+          "sagas": "./src/client/javascript/sagas",
+
+          "containers": "./src/client/javascript/containers",
+          "components": "./src/client/javascript/components"
+        }
+      }
+    ]
+  ]
+}

@@ -1,0 +1,50 @@
+//
+// Application Shell
+// ------------------------------
+
+#app {
+    > div {
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        > aside {
+            position: fixed;
+            height: 80%;
+            left: 0;
+            @include rem(width, 15);
+            @include rem(top, 8);
+            @include rem(margin, 0, 0, 0, 10);
+            @include rem(padding, 0);
+
+            section {
+                position: absolute;
+                bottom: 0;
+                @include rem(font-size, 1.3);
+
+                p {
+                    @include rem(margin, 0, 0, 0.6, 0);
+                }
+            }
+        }
+
+        > main {
+            vertical-align: top;
+            display: inline-block;
+            @include rem(width, 60);
+            @include rem(margin, 8, 7, 2, 33);
+
+            > div h1 {
+                @include rem(margin-top, 0);
+            }
+        }
+    }
+}
+
+// Media queries
+// --------------
+@include media (">=small") {}
+@include media (">=medium") {}
+@include media (">=large") {}
+@include media (">=xlarge") {}
