@@ -6,8 +6,8 @@ import webpack from 'webpack';
 import webpackDevMiddleware from 'webpack-dev-middleware';
 import webpackHotMiddleware from 'webpack-hot-middleware';
 
-import webpackConfig from 'webpack-config';
 import projectConfig from 'project-config';
+import webpackConfig from 'webpack-config';
 
 const __DEV__ = projectConfig.env === 'development';
 const app = express();
