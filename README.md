@@ -1,38 +1,53 @@
-# Woopra Test: Flow Analysis
 
-## 1. Clone this project
+# React Redux Webpack Starter
 
-## 2. Webpack + React + ES6 environment
+#### Build tools
 
-Configure a webpack instance to create a development bundle which will run in the browser. You may use a boilerplate or project generator such as `create-react-app`. Feel free to add extra modules like css post processors and whatever other libraries you will need.
+- [webpack](https://webpack.js.org/)
+- [sass](http://sass-lang.com/)
+- [babel](https://babeljs.io/)
+- etc, see [package.json](https://raw.githubusercontent.com/elijahzapien/vanilla-gulp-starter/master/package.json)
 
-We should be able to run this project using ```yarn start```
+## Getting Started
 
-## 3. Build a page
+#### 1. Install project dependencies:
 
-Build the react-redux foundation for the project and load a main view
+```
+$ yarn install
+```
 
-## 4. Load the data
+or
 
-Load the data from data.json into your store
+```
+$ npm install
+```
 
-## 5. Render a D3 Chart
+#### 2. Start a local dev environment:
 
-Create a graph chart using D3 that will render a visual of the nodes and edges. Edges should visually represent their total. A user should be able visualize the main flow of this graph in a glance. You can use colors, thickness, or whatever else comes to mind. Get creative.
+```
+$ yarn start
+```
 
-## 6. Interactions
+or
 
-When the user clicks on an edge, the number will increment for that edge (using redux).
+```
+$ npm start
+```
 
-# What we will look for
+Accessible at:
 
-1. A clean folder structure
-1. A good approach to load data asynchronously to the store when the page loads (follow react-redux best practices) 
-1. A clean implementation of D3
-1. A smart and unique visual that will help the user immediately get insight from the visualized data.
-1. Smart positioning of nodes
-1. Handling unusual scenarios (such as nodes not completely connected, or when some edges are proportionately much bigger than other edges, etc...)
-1. Loading screens and animations
-1. Eye candy visuals
+```
+http://localhost:3000
+```
 
-Happy coding.
+## Generate a production build
+
+```
+$ yarn run build
+```
+
+or
+
+```
+$ npm run build
+```
