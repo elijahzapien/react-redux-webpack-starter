@@ -1,0 +1,29 @@
+//
+// Components - Graph
+// ------------------------------
+
+.graph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  circle {
+    r: 5;
+    cursor: pointer;
+    transition: stroke $transTimeSlow, stroke-width  $transTimeSlow;
+
+    &:hover {
+      stroke: $grey;
+      stroke-width: 2;
+    }
+  }
+
+  line {
+    stroke: $grey;
+    stroke-width: 1;
+    cursor: pointer;
+  }
+}
