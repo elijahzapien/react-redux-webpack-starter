@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "main": "src/client/javascript/client.js",
   "scripts": {
+    "set-development": "cross-env NODE_ENV=development",
+    "set-production": "cross-env NODE_ENV=production",
     "clean": "rimraf dist",
+    "lint": "eslint . --ext .js,.es6,.jsx",
     "compile": "node scripts/compile",
-    "build": "npm run clean && cross-env NODE_ENV=production npm run compile",
-    "start": "cross-env NODE_ENV=development node src/server/server",
-    "lint": "eslint . --ext .js,.es6,.jsx"
+    "start": "npm run set-development nodemon src/server/server",
+    "build": "npm run set-production && npm run clean && npm run compile",
+    "production": "npm run build && node dist/server.js"
   },
   "repository": {},
   "author": "Elijah Zapien",
@@ -39,7 +42,7 @@
     "babel-preset-stage-2": "6.24.1",
     "babel-register": "6.26.0",
     "chalk": "2.1.0",
-    "cross-env": "5.0.5",
+    "cross-env": "5.1.4",
     "css-loader": "0.28.7",
     "eslint": "4.9.0",
     "eslint-config-standard-react": "5.0.0",
@@ -52,10 +55,11 @@
     "fs-extra": "4.0.2",
     "html-webpack-plugin": "2.30.1",
     "node-sass": "4.5.3",
+    "nodemon": "1.17.3",
     "rimraf": "2.6.2",
     "sass-loader": "6.0.6",
     "style-loader": "0.19.0",
-    "webpack": "3.7.1",
+    "webpack": "3.11.0",
     "webpack-dev-middleware": "1.12.0",
     "webpack-hot-middleware": "2.19.1"
   }

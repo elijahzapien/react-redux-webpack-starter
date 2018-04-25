@@ -7,18 +7,16 @@ import webpack from 'webpack';
 
 import projectConfig from 'project-config';
 
-const __DEV__ = projectConfig.env === 'development';
-const __TEST__ = projectConfig.env === 'test';
-const __PROD__ = projectConfig.env === 'production';
+const __DEV__ = process.env.NODE_ENV === 'development';
+const __TEST__ = process.env.NODE_ENV === 'test';
+const __PROD__ = process.env.NODE_ENV === 'production';
 
-export default new webpack.DefinePlugin(
-  Object.assign(
-    {
-      'process.env': { NODE_ENV: JSON.stringify(projectConfig.env) },
-      __DEV__,
-      __TEST__,
-      __PROD__,
-    },
-    projectConfig.globals
-  )
-);
+export default new webpack.DefinePlugin({
+  'process.env': {
+    NODE_ENV: JSON.stringify(process.env.NODE_ENV)
+  },
+  __DEV__,
+  __TEST__,
+  __PROD__,
+  ...projectConfig.globals
+});

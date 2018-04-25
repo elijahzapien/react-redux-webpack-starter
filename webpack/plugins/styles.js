@@ -5,9 +5,7 @@
 
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
-import projectConfig from 'project-config';
-
-const __DEV__ = projectConfig.env === 'development';
+const __DEV__ = process.env.NODE_ENV === 'development';
 
 export default new ExtractTextPlugin({
   filename: 'styles/[name].[contenthash].css',

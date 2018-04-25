@@ -4,6 +4,8 @@
  */
 
 export {default as globalsPlugin} from './globals';
+export {default as hotModuleReplacementPlugin} from './hot-module-replacement';
+export {default as namedModulesPlugin} from './named-modules';
 export {default as loaderOptionsPlugin} from './loader-options';
 export {default as faviconsPlugin} from './favicons';
 export {default as htmlPlugin} from './html';
