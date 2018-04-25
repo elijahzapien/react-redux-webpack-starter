@@ -7,7 +7,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 import projectConfig from 'project-config';
 
-const __DEV__ = projectConfig.env === 'development';
+const __DEV__ = process.env.NODE_ENV === 'development';
 
 export default new HtmlWebpackPlugin({
   title: 'React, Redux, Webpack Starter',

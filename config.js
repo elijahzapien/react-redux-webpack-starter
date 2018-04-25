@@ -3,10 +3,7 @@
  * @module /config
  */
 
-const NODE_ENV = process.env.NODE_ENV || 'development';
-
 const config = {
-  env: NODE_ENV,
   files: {
     client: 'client'
   },
@@ -46,9 +43,8 @@ const config = {
     }
   },
   sourcemaps: true,
-  externals: {},
   globals: {},
-  verbose: false,
+  verbose: true,
   vendors: []
 };
 
