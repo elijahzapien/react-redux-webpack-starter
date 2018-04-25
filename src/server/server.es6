@@ -9,7 +9,7 @@ import webpackHotMiddleware from 'webpack-hot-middleware';
 import projectConfig from 'project-config';
 import webpackConfig from 'webpack-config';
 
-const __DEV__ = projectConfig.env === 'development';
+const __DEV__ = process.env.NODE_ENV === 'development';
 const app = express();
 
 app.use(compress());
